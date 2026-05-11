@@ -1,0 +1,9 @@
+[submodule "Vendor/libphonenumber"]
+	path = Vendor/libphonenumber
+	url = https://github.com/google/libphonenumber.git
+[submodule "Native/ThirdParty/abseil-cpp"]
+	path = Native/ThirdParty/abseil-cpp
+	url = https://github.com/abseil/abseil-cpp.git
+[submodule "Native/ThirdParty/protobuf"]
+	path = Native/ThirdParty/protobuf
+	url = https://github.com/protocolbuffers/protobuf.git

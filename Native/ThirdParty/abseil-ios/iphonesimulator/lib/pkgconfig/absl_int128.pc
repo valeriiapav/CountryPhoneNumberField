@@ -1,0 +1,12 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator
+exec_prefix=${prefix}
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/include
+
+Name: absl_int128
+Description: Abseil int128 library
+URL: https://abseil.io/
+Version: head
+Requires: absl_compare = head, absl_config = head, absl_core_headers = head, absl_bits = head
+Libs: -L${libdir}  -labsl_int128 
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -Wno-unused-command-line-argument -DNOMINMAX

@@ -1,0 +1,12 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator
+exec_prefix=${prefix}
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/include
+
+Name: absl_hashtablez_sampler
+Description: Abseil hashtablez_sampler library
+URL: https://abseil.io/
+Version: head
+Requires: absl_base = head, absl_config = head, absl_exponential_biased = head, absl_no_destructor = head, absl_raw_logging_internal = head, absl_sample_recorder = head, absl_synchronization = head, absl_time = head
+Libs: -L${libdir}  -labsl_hashtablez_sampler 
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -Wno-unused-command-line-argument -DNOMINMAX

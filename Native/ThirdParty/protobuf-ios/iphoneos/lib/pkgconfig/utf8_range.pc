@@ -1,0 +1,11 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphoneos
+exec_prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphoneos
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphoneos/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphoneos/include
+
+Name: UTF8 Range
+Description: Google's UTF8 Library
+Version: 1.0
+Requires: absl_strings
+Libs: -L${libdir} -lutf8_validity -lutf8_range 
+Cflags: -I${includedir}

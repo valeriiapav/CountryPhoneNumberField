@@ -1,0 +1,12 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphonesimulator
+exec_prefix=${prefix}
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphonesimulator/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/protobuf-ios/iphonesimulator/include
+
+Name: absl_log_internal_strip
+Description: Abseil log_internal_strip library
+URL: https://abseil.io/
+Version: 20250512
+Requires: absl_core_headers = 20250512, absl_log_internal_message = 20250512, absl_log_internal_nullstream = 20250512, absl_log_severity = 20250512
+Libs: -L${libdir}  
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -DNOMINMAX

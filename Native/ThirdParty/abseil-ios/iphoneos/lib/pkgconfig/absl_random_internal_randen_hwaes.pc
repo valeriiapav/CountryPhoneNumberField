@@ -1,0 +1,12 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphoneos
+exec_prefix=${prefix}
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphoneos/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphoneos/include
+
+Name: absl_random_internal_randen_hwaes
+Description: Abseil random_internal_randen_hwaes library
+URL: https://abseil.io/
+Version: head
+Requires: absl_random_internal_platform = head, absl_random_internal_randen_hwaes_impl = head, absl_config = head
+Libs: -L${libdir}  -labsl_random_internal_randen_hwaes 
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -Wno-unused-command-line-argument -DNOMINMAX

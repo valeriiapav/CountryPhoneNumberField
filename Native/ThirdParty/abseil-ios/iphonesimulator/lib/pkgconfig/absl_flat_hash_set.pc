@@ -1,0 +1,12 @@
+prefix=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator
+exec_prefix=${prefix}
+libdir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/lib
+includedir=/Users/valeriiap/Projects/CountryPhoneNumberField/CountryPhoneNumberField/Native/ThirdParty/abseil-ios/iphonesimulator/include
+
+Name: absl_flat_hash_set
+Description: Abseil flat_hash_set library
+URL: https://abseil.io/
+Version: head
+Requires: absl_container_memory = head, absl_hash_container_defaults = head, absl_raw_hash_set = head, absl_algorithm_container = head, absl_core_headers = head, absl_memory = head, absl_type_traits = head
+Libs: -L${libdir}  
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -Wno-unused-command-line-argument -DNOMINMAX
