@@ -24,11 +24,15 @@ add_library(PhoneNumberBridge STATIC
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/shortnumberinfo.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/stringutil.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/unicodestring.cc
+    ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/utf/unicodetext.cc
 
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/phonenumber.pb.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/phonemetadata.pb.cc
 
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/utf/rune.c
+
+    ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/utf/unilib.cc
+    ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/base/strings/string_piece.cc
 )
 
 target_include_directories(PhoneNumberBridge PUBLIC
@@ -43,6 +47,33 @@ target_link_directories(PhoneNumberBridge PUBLIC
     ${ABSEIL_LIB_DIR}
 )
 
+find_library(ICU_LIB icucore)
+
 target_link_libraries(PhoneNumberBridge PUBLIC
+
+    # protobuf
     protobuf
+    libprotobuf-lite
+
+    # abseil
+    absl_base
+    absl_strings
+    absl_throw_delegate
+    absl_raw_logging_internal
+    absl_log_severity
+    absl_hash
+    absl_city
+    absl_low_level_hash
+    absl_int128
+    absl_spinlock_wait
+    absl_malloc_internal
+    absl_time
+    absl_time_zone
+    absl_synchronization
+    absl_stacktrace
+    absl_symbolize
+    absl_demangle_internal
+    absl_debugging_internal
+
+    ${ICU_LIB}
 )

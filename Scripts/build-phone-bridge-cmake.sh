@@ -54,6 +54,11 @@ build_bridge() {
     -DABSEIL_LIB_DIR="$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib"
 
   cmake --build "$BUILD_DIR/$PLATFORM_NAME"
+  
+  libtool -static -o "$BUILD_DIR/$PLATFORM_NAME/libPhoneNumberBridgeMerged.a" \
+    "$BUILD_DIR/$PLATFORM_NAME/libPhoneNumberBridge.a" \
+    "$ROOT_DIR/Native/ThirdParty/protobuf-ios/$PLATFORM_NAME/lib/"*.a \
+    "$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib/"*.a
 }
 
 rm -rf "$BUILD_DIR"
@@ -64,9 +69,9 @@ build_bridge "iphonesimulator" "iphonesimulator" "arm64"
 rm -rf "$OUTPUT_DIR/PhoneNumberBridge.xcframework"
 
 xcodebuild -create-xcframework \
-  -library "$BUILD_DIR/iphoneos/libPhoneNumberBridge.a" \
+  -library "$BUILD_DIR/iphoneos/libPhoneNumberBridgeMerged.a" \
   -headers "$BRIDGE_SRC/include" \
-  -library "$BUILD_DIR/iphonesimulator/libPhoneNumberBridge.a" \
+  -library "$BUILD_DIR/iphonesimulator/libPhoneNumberBridgeMerged.a" \
   -headers "$BRIDGE_SRC/include" \
   -output "$OUTPUT_DIR/PhoneNumberBridge.xcframework"
 

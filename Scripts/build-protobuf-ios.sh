@@ -29,6 +29,7 @@ build_protobuf() {
     -Dprotobuf_BUILD_SHARED_LIBS=OFF \
     -Dprotobuf_ABSL_PROVIDER=package \
     -DCMAKE_PREFIX_PATH="$ABSEIL_IOS/$INSTALL_SUBDIR" \
+    -Dabsl_DIR="$ABSEIL_IOS/$INSTALL_SUBDIR/lib/cmake/absl" \
     -DCMAKE_CXX_STANDARD=17
 
   cmake --build "$BUILD_DIR/$INSTALL_SUBDIR"
