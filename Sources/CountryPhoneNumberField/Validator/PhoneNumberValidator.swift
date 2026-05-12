@@ -21,4 +21,16 @@ public final class PhoneNumberValidator {
     public func formatE164(_ number: String, regionCode: String) -> String? {
         bridge.formatE164(number, regionCode: regionCode)
     }
+
+    public func regionCode(for number: String, defaultRegionCode: String) -> String? {
+        bridge.regionCode(forNumber: number, regionCode: defaultRegionCode)
+    }
+
+    public func nationalNumber(for number: String, regionCode: String) -> String? {
+        bridge.nationalNumber(forNumber: number, regionCode: regionCode)
+    }
+
+    public func isFixedLine(_ number: String, regionCode: String) -> Bool {
+        bridge.isFixedLineNumber(number, regionCode: regionCode)
+    }
 }

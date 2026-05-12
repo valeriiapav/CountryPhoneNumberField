@@ -17,6 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSString *)formatE164:(NSString *)number
                        regionCode:(NSString *)regionCode;
 
+- (nullable NSString *)regionCodeForNumber:(NSString *)number
+                                regionCode:(NSString *)regionCode;
+
+- (nullable NSString *)nationalNumberForNumber:(NSString *)number
+                                    regionCode:(NSString *)regionCode;
+
+- (BOOL)isFixedLineNumber:(NSString *)number
+               regionCode:(NSString *)regionCode;
+
 @end
 
 NS_ASSUME_NONNULL_END
