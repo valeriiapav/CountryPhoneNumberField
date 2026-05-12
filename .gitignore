@@ -147,3 +147,29 @@ Preview Content/
 
 Example/build/
 Example/DerivedData/
+
+# =========================================================
+# Native build artifacts
+# =========================================================
+
+Native/Build/
+
+# Generated protobuf files (optional)
+# Uncomment ONLY if you do not want generated pb files committed
+# Vendor/libphonenumber/cpp/src/phonenumbers/*.pb.h
+# Vendor/libphonenumber/cpp/src/phonenumbers/*.pb.cc
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+
+# XCFramework temporary artifacts
+*.framework
+*.a
+
+# macOS protoc build
+Native/Build/protobuf-macos/
