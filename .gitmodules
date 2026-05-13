@@ -7,3 +7,6 @@
 [submodule "Native/ThirdParty/protobuf"]
 	path = Native/ThirdParty/protobuf
 	url = https://github.com/protocolbuffers/protobuf.git
+[submodule "Native/ThirdParty/re2"]
+	path = Native/ThirdParty/re2
+	url = https://github.com/google/re2.git

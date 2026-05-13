@@ -51,14 +51,17 @@ build_bridge() {
     -DPROTOBUF_INCLUDE_DIR="$ROOT_DIR/Native/ThirdParty/protobuf-ios/$PLATFORM_NAME/include" \
     -DPROTOBUF_LIB_DIR="$ROOT_DIR/Native/ThirdParty/protobuf-ios/$PLATFORM_NAME/lib" \
     -DABSEIL_INCLUDE_DIR="$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/include" \
-    -DABSEIL_LIB_DIR="$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib"
+    -DABSEIL_LIB_DIR="$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib" \
+    -DRE2_INCLUDE_DIR="$ROOT_DIR/Native/ThirdParty/re2-ios/$PLATFORM_NAME/include" \
+    -DRE2_LIB_DIR="$ROOT_DIR/Native/ThirdParty/re2-ios/$PLATFORM_NAME/lib"
 
   cmake --build "$BUILD_DIR/$PLATFORM_NAME"
-  
+
   libtool -static -o "$BUILD_DIR/$PLATFORM_NAME/libPhoneNumberBridgeMerged.a" \
     "$BUILD_DIR/$PLATFORM_NAME/libPhoneNumberBridge.a" \
     "$ROOT_DIR/Native/ThirdParty/protobuf-ios/$PLATFORM_NAME/lib/"*.a \
-    "$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib/"*.a
+    "$ROOT_DIR/Native/ThirdParty/abseil-ios/$PLATFORM_NAME/lib/"*.a \
+    "$ROOT_DIR/Native/ThirdParty/re2-ios/$PLATFORM_NAME/lib/libre2.a"
 }
 
 rm -rf "$BUILD_DIR"

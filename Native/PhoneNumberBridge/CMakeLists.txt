@@ -16,9 +16,11 @@ add_library(PhoneNumberBridge STATIC
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/lite_metadata.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/logger.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/metadata.cc
+    ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/phonenumber.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/phonenumbermatch.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/phonenumberutil.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/regex_based_matcher.cc
+    ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/regexp_adapter_re2.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/regexp_cache.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/short_metadata.cc
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/shortnumberinfo.cc
@@ -35,21 +37,28 @@ add_library(PhoneNumberBridge STATIC
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src/phonenumbers/base/strings/string_piece.cc
 )
 
+target_compile_definitions(PhoneNumberBridge PRIVATE
+    I18N_PHONENUMBERS_USE_RE2
+)
+
 target_include_directories(PhoneNumberBridge PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${ROOT_DIR}/Vendor/libphonenumber/cpp/src
     ${PROTOBUF_INCLUDE_DIR}
     ${ABSEIL_INCLUDE_DIR}
+    ${RE2_INCLUDE_DIR}
 )
 
 target_link_directories(PhoneNumberBridge PUBLIC
     ${PROTOBUF_LIB_DIR}
     ${ABSEIL_LIB_DIR}
+    ${RE2_LIB_DIR}
 )
 
-find_library(ICU_LIB icucore)
-
 target_link_libraries(PhoneNumberBridge PUBLIC
+
+    # re2
+    re2
 
     # protobuf
     protobuf
@@ -74,6 +83,4 @@ target_link_libraries(PhoneNumberBridge PUBLIC
     absl_symbolize
     absl_demangle_internal
     absl_debugging_internal
-
-    ${ICU_LIB}
 )
