@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3796F2D22FB4B83B00B704C2"
+               BlueprintIdentifier = "3766EC272FB5FCBF00A25881"
                BuildableName = "CountryPhoneNumberFieldExample.app"
                BlueprintName = "CountryPhoneNumberFieldExample"
                ReferencedContainer = "container:CountryPhoneNumberFieldExample.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3796F2D22FB4B83B00B704C2"
+            BlueprintIdentifier = "3766EC272FB5FCBF00A25881"
             BuildableName = "CountryPhoneNumberFieldExample.app"
             BlueprintName = "CountryPhoneNumberFieldExample"
             ReferencedContainer = "container:CountryPhoneNumberFieldExample.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3796F2D22FB4B83B00B704C2"
+            BlueprintIdentifier = "3766EC272FB5FCBF00A25881"
             BuildableName = "CountryPhoneNumberFieldExample.app"
             BlueprintName = "CountryPhoneNumberFieldExample"
             ReferencedContainer = "container:CountryPhoneNumberFieldExample.xcodeproj">

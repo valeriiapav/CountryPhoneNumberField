@@ -7,35 +7,35 @@
 
 import Foundation
 
-public final class CountryRepository {
+public final class CPNCountryRepository {
 
-    public private(set) var countries: [Country] = []
+    public private(set) var countries: [CPNCountry] = []
 
     public init() {
         self.countries = Self.loadCountries()
     }
 
-    public func country(forCode code: String) -> Country? {
+    public func country(forCode code: String) -> CPNCountry? {
         countries.first {
             $0.code.caseInsensitiveCompare(code) == .orderedSame
         }
     }
 
-    public func countries(including codes: [String]) -> [Country] {
+    public func countries(including codes: [String]) -> [CPNCountry] {
         let normalizedCodes = Set(codes.map { $0.uppercased() })
         return countries.filter {
             normalizedCodes.contains($0.code.uppercased())
         }
     }
 
-    public func countries(excluding codes: [String]) -> [Country] {
+    public func countries(excluding codes: [String]) -> [CPNCountry] {
         let normalizedCodes = Set(codes.map { $0.uppercased() })
         return countries.filter {
             !normalizedCodes.contains($0.code.uppercased())
         }
     }
 
-    private static func loadCountries() -> [Country] {
+    private static func loadCountries() -> [CPNCountry] {
         guard let url = Bundle.module.url(forResource: "Country", withExtension: "json") else {
             assertionFailure("Country.json not found in package resources")
             return []
@@ -43,7 +43,7 @@ public final class CountryRepository {
 
         do {
             let data = try Data(contentsOf: url)
-            let countries = try JSONDecoder().decode([Country].self, from: data)
+            let countries = try JSONDecoder().decode([CPNCountry].self, from: data)
 
             return countries.sorted {
                 if $0.code == "UA" { return true }

@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3796F2EC2FB4B86C00B704C2 /* CountryPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 3796F2EB2FB4B86C00B704C2 /* CountryPhoneNumberField */; };
+		3766EC412FB5FCF700A25881 /* CountryPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 3766EC402FB5FCF700A25881 /* CountryPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3796F2D32FB4B83B00B704C2 /* CountryPhoneNumberFieldExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryPhoneNumberFieldExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3766EC282FB5FCBF00A25881 /* CountryPhoneNumberFieldExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryPhoneNumberFieldExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3796F2D52FB4B83B00B704C2 /* CountryPhoneNumberFieldExample */ = {
+		3766EC2A2FB5FCBF00A25881 /* CountryPhoneNumberFieldExample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CountryPhoneNumberFieldExample;
 			sourceTree = "<group>";
@@ -23,29 +23,29 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3796F2D02FB4B83B00B704C2 /* Frameworks */ = {
+		3766EC252FB5FCBF00A25881 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3796F2EC2FB4B86C00B704C2 /* CountryPhoneNumberField in Frameworks */,
+				3766EC412FB5FCF700A25881 /* CountryPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3796F2CA2FB4B83B00B704C2 = {
+		3766EC1F2FB5FCBF00A25881 = {
 			isa = PBXGroup;
 			children = (
-				3796F2D52FB4B83B00B704C2 /* CountryPhoneNumberFieldExample */,
-				3796F2D42FB4B83B00B704C2 /* Products */,
+				3766EC2A2FB5FCBF00A25881 /* CountryPhoneNumberFieldExample */,
+				3766EC292FB5FCBF00A25881 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3796F2D42FB4B83B00B704C2 /* Products */ = {
+		3766EC292FB5FCBF00A25881 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3796F2D32FB4B83B00B704C2 /* CountryPhoneNumberFieldExample.app */,
+				3766EC282FB5FCBF00A25881 /* CountryPhoneNumberFieldExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,68 +53,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3796F2D22FB4B83B00B704C2 /* CountryPhoneNumberFieldExample */ = {
+		3766EC272FB5FCBF00A25881 /* CountryPhoneNumberFieldExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3796F2DE2FB4B83C00B704C2 /* Build configuration list for PBXNativeTarget "CountryPhoneNumberFieldExample" */;
+			buildConfigurationList = 3766EC332FB5FCBF00A25881 /* Build configuration list for PBXNativeTarget "CountryPhoneNumberFieldExample" */;
 			buildPhases = (
-				3796F2CF2FB4B83B00B704C2 /* Sources */,
-				3796F2D02FB4B83B00B704C2 /* Frameworks */,
-				3796F2D12FB4B83B00B704C2 /* Resources */,
+				3766EC242FB5FCBF00A25881 /* Sources */,
+				3766EC252FB5FCBF00A25881 /* Frameworks */,
+				3766EC262FB5FCBF00A25881 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3796F2D52FB4B83B00B704C2 /* CountryPhoneNumberFieldExample */,
+				3766EC2A2FB5FCBF00A25881 /* CountryPhoneNumberFieldExample */,
 			);
 			name = CountryPhoneNumberFieldExample;
 			packageProductDependencies = (
-				3796F2EB2FB4B86C00B704C2 /* CountryPhoneNumberField */,
+				3766EC402FB5FCF700A25881 /* CountryPhoneNumberField */,
 			);
 			productName = CountryPhoneNumberFieldExample;
-			productReference = 3796F2D32FB4B83B00B704C2 /* CountryPhoneNumberFieldExample.app */;
+			productReference = 3766EC282FB5FCBF00A25881 /* CountryPhoneNumberFieldExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3796F2CB2FB4B83B00B704C2 /* Project object */ = {
+		3766EC202FB5FCBF00A25881 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					3796F2D22FB4B83B00B704C2 = {
+					3766EC272FB5FCBF00A25881 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 3796F2CE2FB4B83B00B704C2 /* Build configuration list for PBXProject "CountryPhoneNumberFieldExample" */;
+			buildConfigurationList = 3766EC232FB5FCBF00A25881 /* Build configuration list for PBXProject "CountryPhoneNumberFieldExample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3796F2CA2FB4B83B00B704C2;
+			mainGroup = 3766EC1F2FB5FCBF00A25881;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3796F2EA2FB4B86C00B704C2 /* XCLocalSwiftPackageReference "../../CountryPhoneNumberField" */,
+				3766EC3F2FB5FCF700A25881 /* XCLocalSwiftPackageReference "../../CountryPhoneNumberField" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3796F2D42FB4B83B00B704C2 /* Products */;
+			productRefGroup = 3766EC292FB5FCBF00A25881 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3796F2D22FB4B83B00B704C2 /* CountryPhoneNumberFieldExample */,
+				3766EC272FB5FCBF00A25881 /* CountryPhoneNumberFieldExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3796F2D12FB4B83B00B704C2 /* Resources */ = {
+		3766EC262FB5FCBF00A25881 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,7 +124,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3796F2CF2FB4B83B00B704C2 /* Sources */ = {
+		3766EC242FB5FCBF00A25881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +134,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3796F2DC2FB4B83C00B704C2 /* Debug */ = {
+		3766EC312FB5FCBF00A25881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -198,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		3796F2DD2FB4B83C00B704C2 /* Release */ = {
+		3766EC322FB5FCBF00A25881 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +255,7 @@
 			};
 			name = Release;
 		};
-		3796F2DF2FB4B83C00B704C2 /* Debug */ = {
+		3766EC342FB5FCBF00A25881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		3796F2E02FB4B83C00B704C2 /* Release */ = {
+		3766EC352FB5FCBF00A25881 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,20 +322,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3796F2CE2FB4B83B00B704C2 /* Build configuration list for PBXProject "CountryPhoneNumberFieldExample" */ = {
+		3766EC232FB5FCBF00A25881 /* Build configuration list for PBXProject "CountryPhoneNumberFieldExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3796F2DC2FB4B83C00B704C2 /* Debug */,
-				3796F2DD2FB4B83C00B704C2 /* Release */,
+				3766EC312FB5FCBF00A25881 /* Debug */,
+				3766EC322FB5FCBF00A25881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3796F2DE2FB4B83C00B704C2 /* Build configuration list for PBXNativeTarget "CountryPhoneNumberFieldExample" */ = {
+		3766EC332FB5FCBF00A25881 /* Build configuration list for PBXNativeTarget "CountryPhoneNumberFieldExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3796F2DF2FB4B83C00B704C2 /* Debug */,
-				3796F2E02FB4B83C00B704C2 /* Release */,
+				3766EC342FB5FCBF00A25881 /* Debug */,
+				3766EC352FB5FCBF00A25881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -343,18 +343,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3796F2EA2FB4B86C00B704C2 /* XCLocalSwiftPackageReference "../../CountryPhoneNumberField" */ = {
+		3766EC3F2FB5FCF700A25881 /* XCLocalSwiftPackageReference "../../CountryPhoneNumberField" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../CountryPhoneNumberField;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3796F2EB2FB4B86C00B704C2 /* CountryPhoneNumberField */ = {
+		3766EC402FB5FCF700A25881 /* CountryPhoneNumberField */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CountryPhoneNumberField;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 3796F2CB2FB4B83B00B704C2 /* Project object */;
+	rootObject = 3766EC202FB5FCBF00A25881 /* Project object */;
 }

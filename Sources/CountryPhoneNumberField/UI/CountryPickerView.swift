@@ -10,11 +10,11 @@ import UIKit
 
 final class CountryPickerView: UIPickerView {
 
-    var didSelectCountry: ((Country) -> Void)?
+    var didSelectCountry: ((CPNCountry) -> Void)?
 
-    private var countries: [Country] = []
+    private var countries: [CPNCountry] = []
 
-    private var selectedCountry: Country?
+    private var selectedCountry: CPNCountry?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,8 +31,8 @@ final class CountryPickerView: UIPickerView {
     }
 
     func configure(
-        countries: [Country],
-        selectedCountry: Country?
+        countries: [CPNCountry],
+        selectedCountry: CPNCountry?
     ) {
         self.countries = countries
         self.selectedCountry = selectedCountry
@@ -45,7 +45,7 @@ final class CountryPickerView: UIPickerView {
         }
     }
 
-    func setCountry(_ country: Country) {
+    func setCountry(_ country: CPNCountry) {
         selectedCountry = country
 
         guard let index = countries.firstIndex(of: country) else { return }

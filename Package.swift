@@ -1,7 +1,5 @@
 // swift-tools-version: 6.2
 
-// swift-tools-version: 6.2
-
 import PackageDescription
 
 let package = Package(
@@ -21,10 +19,23 @@ let package = Package(
             path: "Binary/PhoneNumberBridge.xcframework"
         ),
 
+        // ObjC libPhoneNumber-iOS — used for as-you-type formatting only.
+        // Validation stays in the C++ PhoneNumberBridge.
+        .target(
+            name: "NBPhoneNumber",
+            path: "Sources/NBPhoneNumber",
+            exclude: ["Internal"],          // empty stub dir — kept by filesystem
+            publicHeadersPath: "include",   // umbrella header lives here, away from Internal/
+            linkerSettings: [
+                .linkedFramework("CoreTelephony")
+            ]
+        ),
+
         .target(
             name: "CountryPhoneNumberField",
             dependencies: [
-                "PhoneNumberBridge"
+                "PhoneNumberBridge",
+                "NBPhoneNumber"
             ],
             resources: [
                 .process("Resources")

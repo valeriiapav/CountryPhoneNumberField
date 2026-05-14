@@ -1,0 +1,5 @@
+module NBPhoneNumber {
+    umbrella header "NBPhoneNumber.h"
+    export *
+    module * { export * }
+}
