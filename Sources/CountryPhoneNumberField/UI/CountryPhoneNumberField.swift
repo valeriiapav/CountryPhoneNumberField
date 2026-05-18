@@ -226,7 +226,7 @@ private extension CountryPhoneNumberField {
 private extension CountryPhoneNumberField {
 
     func showPicker(in parentView: UIView) {
-        let picker = CountryPickerView()
+        let picker = CPNCountryPickerView()
         picker.configure(countries: repository.countries, selectedCountry: selectedCountry)
 
         // Dimmed backdrop (tappable UIControl to dismiss)

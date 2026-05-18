@@ -1,76 +1,46 @@
 # =========================================================
-# Xcode
+# macOS
 # =========================================================
 
 .DS_Store
-*.swp
-*~.nib
+.AppleDouble
+.LSOverride
+Icon?
 
-# User settings
+# =========================================================
+# Editors
+# =========================================================
+
+*.swp
+*~
+.vscode/
+.idea/
+
+# =========================================================
+# Xcode user settings
+# =========================================================
+
 xcuserdata/
 *.xcuserstate
 *.xcscmblueprint
 
-# Xcode build folders
+# =========================================================
+# Xcode build artifacts
+# =========================================================
+
 build/
 DerivedData/
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-.swiftpm/xcode/xcuserdata/
-
-# Archives
 *.xcarchive
 
-# Playground
-timeline.xctimeline
-playground.xcworkspace
+# SwiftPM Xcode generated workspace/userdata
+.swiftpm/xcode/package.xcworkspace/
+.swiftpm/xcode/xcuserdata/
 
 # =========================================================
 # Swift Package Manager
 # =========================================================
 
 .build/
-Packages/
-Package.resolved
-
-# Uncomment if this is an APPLICATION repo.
-# For LIBRARIES it's usually recommended to COMMIT Package.resolved.
-# Package.resolved
-
-# =========================================================
-# CocoaPods
-# =========================================================
-
-Pods/
-Podfile.lock
-
-# =========================================================
-# Carthage
-# =========================================================
-
-Carthage/Build/
-
-# =========================================================
-# Fastlane
-# =========================================================
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/
-fastlane/test_output/
-
-# =========================================================
-# Firebase
-# =========================================================
-
-GoogleService-Info.plist
-
-# =========================================================
-# Tuist
-# =========================================================
-
-Tuist/.build/
-Tuist/Dependencies/
-Tuist/Derived/
 
 # =========================================================
 # Mint
@@ -106,6 +76,7 @@ danger_output.md
 .env.*
 Secrets/
 Config/Secrets.swift
+GoogleService-Info.plist
 
 # =========================================================
 # Temporary files
@@ -115,22 +86,14 @@ tmp/
 temp/
 
 # =========================================================
-# VSCode / JetBrains
+# Playgrounds
 # =========================================================
 
-.vscode/
-.idea/
+timeline.xctimeline
+playground.xcworkspace
 
 # =========================================================
-# macOS
-# =========================================================
-
-.AppleDouble
-.LSOverride
-Icon?
-
-# =========================================================
-# Documentation generated files
+# Generated documentation
 # =========================================================
 
 docs/.build/
@@ -149,27 +112,19 @@ Example/build/
 Example/DerivedData/
 
 # =========================================================
-# Native build artifacts
+# Native / CMake build artifacts
 # =========================================================
 
 Native/Build/
 
-# Generated protobuf files (optional)
-# Uncomment ONLY if you do not want generated pb files committed
-# Vendor/libphonenumber/cpp/src/phonenumbers/*.pb.h
-# Vendor/libphonenumber/cpp/src/phonenumbers/*.pb.cc
+Native/ThirdParty/abseil-ios/
+Native/ThirdParty/protobuf-ios/
+Native/ThirdParty/re2-ios/
 
-# CMake
+# CMake generated files only
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 build.ninja
 .ninja_deps
 .ninja_log
-
-# XCFramework temporary artifacts
-*.framework
-*.a
-
-# macOS protoc build
-Native/Build/protobuf-macos/

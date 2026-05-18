@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class CountryPickerView: UIPickerView {
+final class CPNCountryPickerView: UIPickerView {
 
     var didSelectCountry: ((CPNCountry) -> Void)?
 
@@ -56,7 +56,7 @@ final class CountryPickerView: UIPickerView {
 
 // MARK: - UIPickerViewDataSource
 
-extension CountryPickerView: UIPickerViewDataSource {
+extension CPNCountryPickerView: UIPickerViewDataSource {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
@@ -72,7 +72,7 @@ extension CountryPickerView: UIPickerViewDataSource {
 
 // MARK: - UIPickerViewDelegate
 
-extension CountryPickerView: UIPickerViewDelegate {
+extension CPNCountryPickerView: UIPickerViewDelegate {
 
     func pickerView(
         _ pickerView: UIPickerView,
